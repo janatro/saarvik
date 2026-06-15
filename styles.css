@@ -4535,3 +4535,76 @@ header nav a.active::after {
   background: var(--gold, #c99d47) !important;
   border-radius: 999px !important;
 }
+
+/* Mobile responsive fixes */
+@media (max-width: 640px) {
+  html,
+  body {
+    width: 100%;
+    max-width: 100%;
+    overflow-x: hidden;
+  }
+
+  .container,
+  .visit-panel-compact,
+  .visit-info-group,
+  .visit-info-grid-compact article,
+  .visit-info-grid-priority article,
+  .exhibition-card,
+  .image-world,
+  .object-tile,
+  .museum-pass-card {
+    max-width: 100%;
+    box-sizing: border-box;
+  }
+
+  .visit-info-group {
+    padding: 1.1rem !important;
+  }
+
+  .opening-list div,
+  .price-list div {
+    width: 100%;
+    max-width: 100%;
+    min-height: auto !important;
+    padding: 0.9rem 1rem !important;
+    gap: 0.7rem !important;
+    box-sizing: border-box;
+  }
+
+  .opening-list dt,
+  .opening-list dd,
+  .price-list dt,
+  .price-list dd {
+    font-size: clamp(0.95rem, 4vw, 1.05rem);
+    line-height: 1.25 !important;
+    transform: none !important;
+  }
+
+  .opening-list dd,
+  .price-list dd {
+    white-space: normal !important;
+    text-align: right;
+  }
+
+  .price-list div {
+    display: grid !important;
+    grid-template-columns: 1fr auto;
+  }
+
+  .opening-list div {
+    display: grid !important;
+    grid-template-columns: 1fr auto;
+  }
+
+  .exhibition-card h3,
+  .image-world h3 {
+    font-size: 1.25rem;
+    line-height: 1.15;
+  }
+
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+}
