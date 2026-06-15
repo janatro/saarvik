@@ -4608,3 +4608,33 @@ header nav a.active::after {
     height: auto;
   }
 }
+
+@media (max-width: 640px) {
+  .exhibition-card {
+    overflow: hidden;
+  }
+
+  .exhibition-card img {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+
+  .exhibition-card .card-content,
+  .exhibition-card .exhibition-card-content,
+  .exhibition-card .card-body {
+    position: relative;
+    margin-top: 0;
+    padding-top: 2.2rem;
+  }
+
+  .exhibition-card h3 {
+    margin-top: 0.3rem;
+  }
+
+  .exhibition-card .icon,
+  .exhibition-card .card-icon,
+  .exhibition-card .material-symbols-rounded {
+    transform: none;
+  }
+}
