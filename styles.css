@@ -4535,3 +4535,105 @@ header nav a.active::after {
   background: var(--gold, #c99d47) !important;
   border-radius: 999px !important;
 }
+
+/* Mobile Fixes */
+@media (max-width: 600px) {
+  body {
+    overflow-x: hidden;
+  }
+
+  .container {
+    width: 100%;
+    max-width: 100%;
+    padding-left: 18px;
+    padding-right: 18px;
+  }
+
+  .card,
+  .info-card,
+  .visit-card,
+  .ticket-card,
+  .exhibition-card,
+  .location-card {
+    max-width: 100%;
+    overflow: hidden;
+  }
+
+  .exhibition-card {
+    display: block;
+  }
+
+  .exhibition-card img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+
+  .exhibition-card .card-content,
+  .exhibition-card .content {
+    padding: 20px;
+  }
+
+  .exhibition-card h2,
+  .exhibition-card h3 {
+    font-size: 1.6rem;
+    line-height: 1.15;
+  }
+
+  .exhibition-card p {
+    font-size: 1.1rem;
+    line-height: 1.45;
+  }
+
+  .opening-hours,
+  .price-list,
+  .hours-list,
+  .prices-list {
+    width: 100%;
+  }
+
+  .opening-hours li,
+  .price-list li,
+  .hours-list li,
+  .prices-list li {
+    display: flex;
+    justify-content: space-between;
+    gap: 12px;
+    font-size: 1rem;
+    line-height: 1.3;
+    padding: 16px;
+  }
+
+  .opening-hours li span,
+  .price-list li span,
+  .hours-list li span,
+  .prices-list li span {
+    font-size: 1rem;
+    white-space: normal;
+  }
+
+  .map-card,
+  .location-map,
+  .map-wrapper {
+    min-height: auto;
+    padding: 16px;
+  }
+
+  .map-card img,
+  .location-map img,
+  .map-wrapper img {
+    width: 100%;
+    height: auto;
+    max-height: 260px;
+    object-fit: cover;
+    display: block;
+  }
+
+  h1 {
+    font-size: clamp(2.2rem, 12vw, 4rem);
+  }
+
+  h2 {
+    font-size: clamp(1.7rem, 8vw, 2.5rem);
+  }
+}
