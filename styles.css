@@ -4718,3 +4718,94 @@ main .page-hero {
     padding: 64px 0 42px !important;
   }
 }
+
+/* === SAARVIK SEO Article Layout Fix === */
+
+.seo-article .section,
+main .about-section {
+  padding: 42px 0 !important;
+}
+
+.seo-article .compact,
+main .compact.about-section {
+  padding: 34px 0 !important;
+}
+
+.seo-article .page-hero,
+main .page-hero {
+  padding: 74px 0 48px !important;
+}
+
+.about-split {
+  display: grid !important;
+  grid-template-columns: minmax(0, 1.08fr) minmax(320px, 0.92fr) !important;
+  gap: 2rem !important;
+  align-items: start !important;
+}
+
+.about-split-reverse {
+  grid-template-columns: minmax(0, 1.08fr) minmax(320px, 0.92fr) !important;
+}
+
+.about-copy {
+  max-width: 720px !important;
+}
+
+.about-copy p {
+  margin: 0 0 0.75rem !important;
+}
+
+.about-image-card {
+  margin: 0 !important;
+  align-self: start !important;
+}
+
+.about-image-card img {
+  width: 100% !important;
+  max-height: 380px !important;
+  object-fit: cover !important;
+  border-radius: 22px !important;
+}
+
+.about-audience-grid {
+  gap: 1rem !important;
+}
+
+.about-audience-card {
+  padding: 1.2rem !important;
+  min-height: 0 !important;
+}
+
+.project-info {
+  margin: 0 !important;
+  padding: 1.35rem !important;
+}
+
+.guide-station {
+  margin-top: 0.75rem !important;
+}
+
+.guide-station h3 {
+  margin: 1rem 0 0.25rem !important;
+}
+
+.section-header {
+  margin-bottom: 1.25rem !important;
+}
+
+@media (max-width: 900px) {
+  .about-split,
+  .about-split-reverse {
+    grid-template-columns: 1fr !important;
+  }
+
+  .seo-article .section,
+  main .about-section {
+    padding: 34px 0 !important;
+  }
+
+  .seo-article .page-hero,
+  main .page-hero {
+    padding: 58px 0 38px !important;
+  }
+}
