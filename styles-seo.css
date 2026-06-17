@@ -1,0 +1,42 @@
+/* =====================================
+   SAARVIK SEO PAGES
+   ===================================== */
+
+/* Maximalbreite etwas harmonischer */
+.about-section .container {
+    max-width: 1180px;
+}
+
+/* Bild rechts schöner ausrichten */
+.about-image-card {
+    align-self: start;
+    margin-top: 20px;
+}
+
+/* Mythos-Kasten etwas tiefer */
+.project-info,
+.guide-station,
+.fact-box {
+    margin-top: 40px;
+}
+
+/* Besucherfrage etwas tiefer */
+.about-split .project-info {
+    margin-top: 55px;
+}
+
+/* FAQ näher an passende Artikel */
+.faq-section {
+    padding-bottom: 50px;
+}
+
+/* Passende Artikel näher an FAQ */
+.related-section {
+    padding-top: 50px;
+}
+
+/* Mehr Luft zwischen Buttons und Empfehlungen */
+.btn-group,
+.topic-tags {
+    margin-bottom: 28px;
+}
