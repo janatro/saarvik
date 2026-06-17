@@ -3,6 +3,12 @@
    ===================================== */
 
 /* Maximalbreite etwas harmonischer */
+
+/* TEST */
+body {
+  outline: 10px solid red !important;
+}
+
 .about-section .container {
     max-width: 1180px;
 }
