@@ -4719,52 +4719,62 @@ main .page-hero {
   }
 }
 
-/* === SAARVIK SEO Article Layout Fix === */
+/* === Final SEO Article Design Fix === */
 
-.seo-article .section,
-main .about-section {
-  padding: 42px 0 !important;
+main .page-hero {
+  padding: 74px 0 52px !important;
 }
 
-.seo-article .compact,
-main .compact.about-section {
+main .about-section,
+main .section {
   padding: 34px 0 !important;
 }
 
-.seo-article .page-hero,
-main .page-hero {
-  padding: 74px 0 48px !important;
+main .compact {
+  padding: 28px 0 !important;
 }
 
 .about-split {
   display: grid !important;
-  grid-template-columns: minmax(0, 1.08fr) minmax(320px, 0.92fr) !important;
-  gap: 2rem !important;
-  align-items: start !important;
+  grid-template-columns: 1.25fr 0.75fr !important;
+  gap: 3rem !important;
+  align-items: center !important;
 }
 
 .about-split-reverse {
-  grid-template-columns: minmax(0, 1.08fr) minmax(320px, 0.92fr) !important;
+  grid-template-columns: 1.2fr 0.8fr !important;
+  align-items: center !important;
 }
 
 .about-copy {
+  max-width: 760px !important;
+}
+
+.about-copy h2 {
   max-width: 720px !important;
+  margin-bottom: 1rem !important;
 }
 
 .about-copy p {
+  font-size: 0.98rem !important;
+  line-height: 1.75 !important;
   margin: 0 0 0.75rem !important;
 }
 
 .about-image-card {
   margin: 0 !important;
-  align-self: start !important;
+  align-self: center !important;
 }
 
 .about-image-card img {
   width: 100% !important;
-  max-height: 380px !important;
+  max-height: 330px !important;
   object-fit: cover !important;
   border-radius: 22px !important;
+}
+
+.section-header {
+  margin-bottom: 1.15rem !important;
 }
 
 .about-audience-grid {
@@ -4772,7 +4782,7 @@ main .page-hero {
 }
 
 .about-audience-card {
-  padding: 1.2rem !important;
+  padding: 1.15rem !important;
   min-height: 0 !important;
 }
 
@@ -4782,30 +4792,39 @@ main .page-hero {
 }
 
 .guide-station {
-  margin-top: 0.75rem !important;
+  margin-top: 0.8rem !important;
 }
 
 .guide-station h3 {
   margin: 1rem 0 0.25rem !important;
 }
 
-.section-header {
-  margin-bottom: 1.25rem !important;
+.guide-station p {
+  margin: 0 0 0.7rem !important;
+}
+
+main hr,
+.about-section hr {
+  margin: 2rem 0 !important;
 }
 
 @media (max-width: 900px) {
   .about-split,
   .about-split-reverse {
     grid-template-columns: 1fr !important;
+    gap: 1.5rem !important;
   }
 
-  .seo-article .section,
-  main .about-section {
-    padding: 34px 0 !important;
-  }
-
-  .seo-article .page-hero,
   main .page-hero {
     padding: 58px 0 38px !important;
+  }
+
+  main .about-section,
+  main .section {
+    padding: 30px 0 !important;
+  }
+
+  .about-image-card img {
+    max-height: 280px !important;
   }
 }
