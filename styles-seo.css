@@ -1,151 +1,89 @@
-/* =====================================
-   SAARVIK SEO PAGES
-   ===================================== */
-
-/* Maximalbreite etwas harmonischer */
-
-/* TEST */
-body {
-  outline: 10px solid red !important;
-}
-
-.about-section .container {
-    max-width: 1180px;
-}
-
-/* Bild rechts schöner ausrichten */
-.about-image-card {
-    align-self: start;
-    margin-top: 20px;
-}
-
-/* Mythos-Kasten etwas tiefer */
-.project-info,
-.guide-station,
-.fact-box {
-    margin-top: 40px;
-}
-
-/* Besucherfrage etwas tiefer */
-.about-split .project-info {
-    margin-top: 55px;
-}
-
-/* FAQ näher an passende Artikel */
-.faq-section {
-    padding-bottom: 50px;
-}
-
-/* Passende Artikel näher an FAQ */
-.related-section {
-    padding-top: 50px;
-}
-
-/* Mehr Luft zwischen Buttons und Empfehlungen */
-.btn-group,
-.topic-tags {
-    margin-bottom: 28px;
-}
-
 /* SAARVIK SEO-Seiten Feinschliff */
 
-main .section {
-  padding-top: 46px;
-  padding-bottom: 46px;
+body {
+  outline: 8px solid red !important;
 }
 
-main .compact {
-  padding-top: 36px;
-  padding-bottom: 36px;
+main .section.about-section {
+  padding-top: 32px !important;
+  padding-bottom: 32px !important;
+}
+
+main .section.compact.about-section {
+  padding-top: 28px !important;
+  padding-bottom: 28px !important;
 }
 
 .about-split,
 .about-split-reverse {
-  display: grid;
-  grid-template-columns: 1.08fr 0.92fr;
-  gap: 3.5rem;
-  align-items: start;
+  grid-template-columns: minmax(0, 1.15fr) minmax(300px, .85fr) !important;
+  gap: 3.2rem !important;
+  align-items: start !important;
 }
 
 .about-image-card {
-  margin-top: 28px;
-  max-width: 520px;
-  justify-self: center;
+  margin-top: 34px !important;
+  max-width: 540px !important;
+  justify-self: center !important;
 }
 
 .about-image-card img {
-  width: 100%;
-  height: 360px;
-  object-fit: cover;
-  border-radius: 24px;
+  width: 100% !important;
+  height: 360px !important;
+  max-height: none !important;
+  object-fit: cover !important;
+  border-radius: 24px !important;
 }
 
 .about-split-reverse .project-info {
-  margin-top: 74px;
+  margin-top: 88px !important;
 }
 
 .about-split .project-info {
-  margin-top: 58px;
+  margin-top: 70px !important;
 }
 
 .about-audience-grid {
-  margin-top: 1.2rem;
-  margin-bottom: 1.4rem;
+  margin-top: 1.1rem !important;
+  margin-bottom: 1.5rem !important;
 }
 
 .guide-station {
-  margin-top: 1.25rem;
-}
-
-.guide-station h3 {
-  margin-top: 1.1rem;
-}
-
-.seo-table {
-  margin-top: 1rem;
+  margin-top: 1.4rem !important;
 }
 
 .seo-table th,
 .seo-table td {
-  padding: 1rem 1.15rem;
-  line-height: 1.55;
+  padding: 1rem 1.2rem !important;
+  line-height: 1.55 !important;
 }
 
 section.compact.about-section + section.compact.about-section {
-  padding-top: 20px;
-}
-
-section.compact.about-section:last-of-type {
-  padding-top: 24px;
+  padding-top: 10px !important;
 }
 
 .btn-outline-gold {
-  margin-bottom: 0.8rem;
+  margin-bottom: 0.9rem !important;
 }
 
 .check-list {
-  margin-top: 1rem;
-  line-height: 1.7;
+  margin-top: 1rem !important;
+  line-height: 1.7 !important;
 }
 
 @media (max-width: 900px) {
   .about-split,
   .about-split-reverse {
-    grid-template-columns: 1fr;
-    gap: 1.6rem;
-  }
-
-  .about-image-card {
-    max-width: 100%;
-    margin-top: 0;
+    grid-template-columns: 1fr !important;
+    gap: 1.6rem !important;
   }
 
   .about-image-card img {
-    height: auto;
+    height: auto !important;
   }
 
   .about-split .project-info,
   .about-split-reverse .project-info {
-    margin-top: 1rem;
+    margin-top: 1rem !important;
   }
 }
