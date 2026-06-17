@@ -4638,3 +4638,83 @@ header nav a.active::after {
     transform: none;
   }
 }
+
+
+/* === SEO-Seiten Layout-Fix === */
+
+main .section {
+  padding: 48px 0 !important;
+}
+
+main .compact {
+  padding: 42px 0 !important;
+}
+
+main .page-hero {
+  padding: 86px 0 54px !important;
+}
+
+.about-split {
+  display: grid !important;
+  grid-template-columns: 1.12fr 0.88fr !important;
+  gap: 2.4rem !important;
+  align-items: start !important;
+}
+
+.about-split-reverse {
+  grid-template-columns: 1.12fr 0.88fr !important;
+}
+
+.about-copy {
+  max-width: 680px !important;
+}
+
+.about-copy p {
+  margin-bottom: 0.85rem !important;
+}
+
+.about-image-card {
+  margin-top: 0 !important;
+  align-self: start !important;
+}
+
+.about-image-card img {
+  width: 100% !important;
+  max-height: 430px !important;
+  object-fit: cover !important;
+  border-radius: 24px !important;
+}
+
+.about-audience-grid {
+  gap: 1rem !important;
+}
+
+.about-audience-card {
+  min-height: auto !important;
+  padding: 1.25rem !important;
+}
+
+.guide-station h3 {
+  margin-top: 1.25rem !important;
+  margin-bottom: 0.35rem !important;
+}
+
+.project-info {
+  margin-top: 0 !important;
+  padding: 1.5rem !important;
+}
+
+@media (max-width: 900px) {
+  .about-split,
+  .about-split-reverse {
+    grid-template-columns: 1fr !important;
+  }
+
+  main .section {
+    padding: 38px 0 !important;
+  }
+
+  main .page-hero {
+    padding: 64px 0 42px !important;
+  }
+}
