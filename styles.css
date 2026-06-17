@@ -4828,3 +4828,80 @@ main hr,
     max-height: 280px !important;
   }
 }
+
+/* === SEO Fine Tuning: Abstände & Cards === */
+
+/* Abschnitt "Welche Bedeutung..." kompakter, aber nicht gequetscht */
+.seo-deep-dive {
+  margin-top: 0.5rem !important;
+}
+
+.seo-deep-dive .about-audience-grid {
+  margin-top: 1.2rem !important;
+  margin-bottom: 1rem !important;
+}
+
+/* Tabelle / Missverständnisse bekommt mehr Luft */
+.seo-table,
+.myth-table {
+  margin-top: 1.1rem !important;
+  margin-bottom: 1.4rem !important;
+}
+
+.seo-table th,
+.seo-table td,
+.myth-table th,
+.myth-table td {
+  padding: 0.95rem 1.1rem !important;
+  line-height: 1.55 !important;
+}
+
+/* Mythos-Box rechts etwas tiefer und harmonischer */
+.project-info {
+  transform: translateY(18px) !important;
+}
+
+/* Faktenbereich: Cards und Details besser trennen */
+.about-audience-grid + .guide-station {
+  margin-top: 1.4rem !important;
+}
+
+.guide-station ul {
+  margin-top: 0.75rem !important;
+  margin-bottom: 0 !important;
+}
+
+/* Abstand zwischen Fakten und Museumsabschnitt verkleinern */
+.about-section:has(.guide-station) {
+  padding-bottom: 22px !important;
+}
+
+/* Besucherfrage rechts etwas tiefer */
+.about-split .project-info {
+  align-self: center !important;
+}
+
+/* FAQ und passende Artikel näher zusammen */
+.about-section:has(.guide-station) + .compact.about-section {
+  padding-top: 24px !important;
+}
+
+.compact.about-section + .compact.about-section {
+  padding-top: 16px !important;
+}
+
+/* Abstand zwischen gelben Buttons und Empfehlungen */
+.btn-outline-gold,
+.btn-outline {
+  margin-bottom: 0.45rem !important;
+}
+
+.compact.about-section p + h3 {
+  margin-top: 1.35rem !important;
+}
+
+/* Untere Linkliste etwas ruhiger */
+.check-list {
+  margin-top: 0.7rem !important;
+  line-height: 1.7 !important;
+}
