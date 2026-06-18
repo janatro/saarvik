@@ -84,14 +84,14 @@ h1{font-size:clamp(2.45rem,5vw,4.7rem);font-weight:850;line-height:1.02}h2{font-
 
 /* === Referenzbasierter Museums-Feinschliff: direkte hochgeladene Assets === */
 :root{--card-radius:18px;--card-shadow:0 12px 28px rgba(6,40,74,.10);--card-shadow-hover:0 16px 36px rgba(6,40,74,.13)}
-.premium-hero{min-height:560px!important;background:linear-gradient(90deg,#06284A 0%,rgba(6,40,74,.96) 30%,rgba(6,40,74,.68) 54%,rgba(6,40,74,.08) 100%),url('assets/hero-museum-photo.png') center center/cover no-repeat!important;color:#fff!important;display:grid!important;align-items:center!important}.premium-hero:after{display:none!important}.premium-hero .hero-grid{grid-template-columns:minmax(0,650px)!important;gap:0!important}.hero-visual{display:none!important}.hero-copy{padding:4.4rem 0 4.8rem!important;max-width:620px!important}.hero-copy h1{font-family:Inter,system-ui,sans-serif!important;font-size:clamp(2.4rem,4.2vw,4.35rem)!important;line-height:1.02!important;letter-spacing:-.055em!important}.hero-copy .lead{font-size:1.05rem!important;line-height:1.72!important;color:rgba(255,255,255,.9)!important;max-width:560px!important}
+.premium-hero{min-height:560px!important;background:linear-gradient(90deg,#06284A 0%,rgba(6,40,74,.96) 30%,rgba(6,40,74,.68) 54%,rgba(6,40,74,.08) 100%),url('assets/hero-museum-photo.jpg') center center/cover no-repeat!important;color:#fff!important;display:grid!important;align-items:center!important}.premium-hero:after{display:none!important}.premium-hero .hero-grid{grid-template-columns:minmax(0,650px)!important;gap:0!important}.hero-visual{display:none!important}.hero-copy{padding:4.4rem 0 4.8rem!important;max-width:620px!important}.hero-copy h1{font-family:Inter,system-ui,sans-serif!important;font-size:clamp(2.4rem,4.2vw,4.35rem)!important;line-height:1.02!important;letter-spacing:-.055em!important}.hero-copy .lead{font-size:1.05rem!important;line-height:1.72!important;color:rgba(255,255,255,.9)!important;max-width:560px!important}
 .museum-cards{display:grid!important;grid-template-columns:repeat(3,minmax(0,1fr))!important;gap:1.35rem!important;align-items:stretch!important}.object-tile{display:grid!important;grid-template-columns:42% 58%!important;min-height:170px!important;padding:0!important;overflow:hidden!important;border-radius:var(--card-radius)!important;box-shadow:var(--card-shadow)!important;border:1px solid rgba(6,40,74,.08)!important;background:#fffdf8!important}.object-tile .tile-photo{width:100%!important;height:100%!important;min-height:170px!important;object-fit:cover!important;background:#06284A!important;border:0!important}.object-tile .tile-body{display:grid!important;grid-template-columns:42px 1fr!important;column-gap:.75rem!important;align-content:center!important;align-items:start!important;padding:1.35rem 1.4rem!important}.object-tile .material-symbols-rounded{grid-row:1/3!important;width:36px!important;height:36px!important;min-width:36px!important;margin:0!important;font-size:23px!important;display:grid!important;place-items:center!important;border-radius:0!important;background:transparent!important;color:var(--gold)!important}.object-tile h3{font-family:Inter,system-ui,sans-serif!important;font-size:1.08rem!important;line-height:1.25!important;margin:0 0 .55rem!important;color:#0b2747!important}.object-tile p{grid-column:2!important;margin:0!important;color:#4f6074!important;line-height:1.6!important;font-size:.96rem!important}.object-tile:before,.object-tile:after,.world:before,.world:after,.pass-ornate:before,.pass-ornate:after,.badge:before,.badge:after,.rank-list:before,.rank-list:after,.activity-card:before,.activity-card:after{display:none!important;content:none!important}
 .immersive{background:#fffdf8!important;color:var(--ink)!important;padding:1.35rem 0 70px!important;overflow:visible!important}.immersive:after{display:none!important}.interactive-head{margin-top:3.2rem!important}.museum-worlds{display:grid!important;grid-template-columns:repeat(5,minmax(0,1fr))!important;gap:1.35rem!important}.image-world{padding:0!important;overflow:hidden!important;border-radius:var(--card-radius)!important;box-shadow:var(--card-shadow)!important;border:1px solid rgba(6,40,74,.08)!important;background:#fffdf8!important}.image-world img{width:100%!important;height:132px!important;object-fit:cover!important}.image-world>div{display:grid!important;grid-template-columns:34px 1fr!important;column-gap:.65rem!important;padding:1.15rem 1.1rem 1.25rem!important;align-items:start!important}.image-world .material-symbols-rounded{grid-row:1/3!important;width:28px!important;height:28px!important;margin:.05rem 0 0!important;font-size:22px!important;color:var(--gold)!important;background:transparent!important}.image-world h3{font-family:Inter,system-ui,sans-serif!important;font-size:1rem!important;margin:0 0 .42rem!important;color:#0b2747!important;line-height:1.25!important}.image-world p{grid-column:2!important;margin:0!important;color:#4f6074!important;font-size:.92rem!important;line-height:1.55!important}
 .museum-pass-card.pass-ornate,.museum-pass-card.pass-dashboard,.museum-pass-card.pass-preview{width:100%!important;min-height:118px!important;display:grid!important;grid-template-columns:110px minmax(300px,1fr) minmax(260px,.8fr) auto!important;align-items:center!important;gap:1.8rem!important;padding:1.35rem 1.75rem!important;border-radius:16px!important;background:linear-gradient(135deg,#06284A 0%,#082f56 55%,#06284A 100%)!important;color:#fff!important;border:1px solid rgba(200,155,71,.28)!important;box-shadow:0 12px 30px rgba(6,40,74,.16)!important;text-align:left!important}.pass-coin-wrap{display:flex!important;align-items:center!important;justify-content:center!important}.coin{width:86px!important;height:86px!important;min-width:86px!important;border-radius:50%!important;background:none!important;box-shadow:none!important;animation:saarvikAssetCoinSpin 7.5s linear infinite!important;transform-origin:50% 50%!important;transform-style:preserve-3d!important;will-change:transform!important;margin:0!important;overflow:visible!important}.coin img{width:100%!important;height:100%!important;object-fit:contain!important;display:block!important;filter:drop-shadow(0 3px 5px rgba(0,0,0,.18))!important;backface-visibility:visible!important}.coin:before,.coin:after{display:none!important;content:none!important}@keyframes saarvikAssetCoinSpin{from{transform:rotateY(0deg)}to{transform:rotateY(360deg)}}.pass-main{min-width:0!important}.museum-pass-card .eyebrow{font-family:Inter,system-ui,sans-serif!important;font-size:.73rem!important;letter-spacing:.18em!important;color:#fff!important;margin:0 0 .42rem!important;font-weight:900!important}.museum-pass-card h2,.museum-pass-card h3{font-family:Inter,system-ui,sans-serif!important;font-size:1.28rem!important;line-height:1.1!important;margin:0 0 .35rem!important;color:#fff!important}.museum-pass-card p{margin:0!important;color:rgba(255,255,255,.88)!important;line-height:1.55!important}.museum-pass-card .progress{width:min(100%,540px)!important;height:8px!important;margin-top:1.05rem!important;background:rgba(255,255,255,.13)!important;border-radius:999px!important;box-shadow:none!important}.museum-pass-card .progress span{background:#d6aa55!important;box-shadow:none!important;border-radius:inherit!important}.pass-copy{max-width:360px!important}.btn-outline-gold{background:transparent!important;color:#d6aa55!important;border:1px solid #d6aa55!important;box-shadow:none!important}.btn-outline-gold:hover{background:rgba(214,170,85,.1)!important;transform:translateY(-1px)!important}.pass-button{white-space:nowrap!important;justify-self:end!important;min-width:174px!important}
 .adventure-hero .split{grid-template-columns:1fr!important}.adventure-hero .museum-pass-card{margin-top:1.8rem!important}.pass-grid .pass-ornate{background:#fffdf8!important;color:var(--ink)!important;border:1px solid rgba(6,40,74,.08)!important;box-shadow:var(--card-shadow)!important}
 [class*="rune"]:not(.rune-translator):not(.rune-stone):not(#runeInput):not(#runeOutput),.hero-rune{background-image:none!important}.large-tile:after,.image-card:after,.world:after,.pass-ornate:after,.quote-card span{display:none!important;content:none!important}
 @media(max-width:1120px){.museum-worlds{grid-template-columns:repeat(3,minmax(0,1fr))!important}.museum-pass-card.pass-ornate,.museum-pass-card.pass-dashboard,.museum-pass-card.pass-preview{grid-template-columns:94px 1fr!important;gap:1.2rem!important}.pass-copy,.pass-button{grid-column:2!important;justify-self:start!important}.pass-button{margin-top:.25rem!important}.coin{width:78px!important;height:78px!important;min-width:78px!important}}
-@media(max-width:980px){.premium-hero{min-height:auto!important;background:linear-gradient(180deg,#06284A 0%,rgba(6,40,74,.82) 50%,rgba(6,40,74,.68) 100%),url('assets/hero-museum-photo.png') center center/cover no-repeat!important}.museum-cards{grid-template-columns:1fr!important}.object-tile{grid-template-columns:38% 62%!important}.museum-worlds{grid-template-columns:repeat(2,minmax(0,1fr))!important}}
+@media(max-width:980px){.premium-hero{min-height:auto!important;background:linear-gradient(180deg,#06284A 0%,rgba(6,40,74,.82) 50%,rgba(6,40,74,.68) 100%),url('assets/hero-museum-photo.jpg') center center/cover no-repeat!important}.museum-cards{grid-template-columns:1fr!important}.object-tile{grid-template-columns:38% 62%!important}.museum-worlds{grid-template-columns:repeat(2,minmax(0,1fr))!important}}
 @media(max-width:640px){.container{width:min(var(--max),calc(100% - 28px))}.hero-copy{padding:3.2rem 0!important}.object-tile{grid-template-columns:1fr!important}.object-tile .tile-photo{height:190px!important;min-height:190px!important}.museum-worlds{grid-template-columns:1fr!important}.museum-pass-card.pass-ornate,.museum-pass-card.pass-dashboard,.museum-pass-card.pass-preview{grid-template-columns:1fr!important;text-align:left!important;padding:1.4rem!important}.pass-coin-wrap{justify-content:flex-start!important}.pass-copy,.pass-button{grid-column:auto!important}.pass-button{width:100%!important;justify-self:stretch!important}.coin{width:74px!important;height:74px!important;min-width:74px!important}}
 
 /* === Header/Hero exakt nach Referenzbild: echtes hochgeladenes Museumsfoto === */
@@ -120,7 +120,7 @@ h1{font-size:clamp(2.45rem,5vw,4.7rem);font-weight:850;line-height:1.02}h2{font-
       rgba(6,40,74,.72) 44%,
       rgba(6,40,74,.26) 64%,
       rgba(6,40,74,.03) 100%),
-    url('assets/hero-reference-museum.png') center center/cover no-repeat!important;
+    url('assets/hero-reference-museum.jpg') center center/cover no-repeat!important;
 }
 .premium-hero::before,
 .premium-hero::after{display:none!important;content:none!important;}
@@ -198,7 +198,7 @@ h1{font-size:clamp(2.45rem,5vw,4.7rem);font-weight:850;line-height:1.02}h2{font-
     height:auto!important;
     background:
       linear-gradient(90deg,rgba(6,40,74,.98) 0%,rgba(6,40,74,.88) 52%,rgba(6,40,74,.30) 100%),
-      url('assets/hero-reference-museum.png') center center/cover no-repeat!important;
+      url('assets/hero-reference-museum.jpg') center center/cover no-repeat!important;
   }
   .premium-hero .container.hero-grid{padding:4rem 0!important;}
 }
@@ -208,7 +208,7 @@ h1{font-size:clamp(2.45rem,5vw,4.7rem);font-weight:850;line-height:1.02}h2{font-
     min-height:520px!important;
     background:
       linear-gradient(180deg,rgba(6,40,74,.98) 0%,rgba(6,40,74,.88) 56%,rgba(6,40,74,.52) 100%),
-      url('assets/hero-reference-museum.png') center center/cover no-repeat!important;
+      url('assets/hero-reference-museum.jpg') center center/cover no-repeat!important;
   }
   .premium-hero .container.hero-grid{width:min(var(--max),calc(100% - 28px))!important;padding:3.4rem 0!important;}
   .premium-hero .hero-copy h1{font-size:2.35rem!important;}
@@ -229,7 +229,7 @@ h1{font-size:clamp(2.45rem,5vw,4.7rem);font-weight:850;line-height:1.02}h2{font-
       rgba(6,40,74,.72) 43%,
       rgba(6,40,74,.28) 62%,
       rgba(6,40,74,.05) 100%),
-    url('assets/hero-reference-museum.png') center center/cover no-repeat!important;
+    url('assets/hero-reference-museum.jpg') center center/cover no-repeat!important;
 }
 .premium-hero .container.hero-grid{
   width:min(1180px,calc(100% - 40px))!important;
@@ -364,7 +364,7 @@ h1{font-size:clamp(2.45rem,5vw,4.7rem);font-weight:850;line-height:1.02}h2{font-
     height:auto!important;
     background:
       linear-gradient(90deg,rgba(6,40,74,.98) 0%,rgba(6,40,74,.88) 54%,rgba(6,40,74,.34) 100%),
-      url('assets/hero-reference-museum.png') center center/cover no-repeat!important;
+      url('assets/hero-reference-museum.jpg') center center/cover no-repeat!important;
   }
   .premium-hero .container.hero-grid{padding:4.8rem 0!important;}
   .museum-worlds{grid-template-columns:repeat(2,minmax(0,1fr))!important;}
@@ -374,7 +374,7 @@ h1{font-size:clamp(2.45rem,5vw,4.7rem);font-weight:850;line-height:1.02}h2{font-
     min-height:560px!important;
     background:
       linear-gradient(180deg,rgba(6,40,74,.98) 0%,rgba(6,40,74,.88) 58%,rgba(6,40,74,.60) 100%),
-      url('assets/hero-reference-museum.png') center center/cover no-repeat!important;
+      url('assets/hero-reference-museum.jpg') center center/cover no-repeat!important;
   }
   .premium-hero .container.hero-grid{width:min(1180px,calc(100% - 28px))!important;padding:4rem 0!important;}
   .premium-hero .hero-copy h1{font-size:2.35rem!important;}
@@ -3312,7 +3312,7 @@ h1{font-size:clamp(2.45rem,5vw,4.7rem);font-weight:850;line-height:1.02}h2{font-
       rgba(6, 40, 74, .72) 44%,
       rgba(6, 40, 74, .28) 62%,
       rgba(6, 40, 74, .04) 100%),
-    url('assets/hero-reference-museum.png') center center / cover no-repeat !important;
+    url('assets/hero-reference-museum.jpg') center center / cover no-repeat !important;
 }
 
 .premium-hero::before,
@@ -3412,7 +3412,7 @@ h1{font-size:clamp(2.45rem,5vw,4.7rem);font-weight:850;line-height:1.02}h2{font-
     height: auto !important;
     background:
       linear-gradient(90deg, rgba(6, 40, 74, .98) 0%, rgba(6, 40, 74, .88) 56%, rgba(6, 40, 74, .36) 100%),
-      url('assets/hero-reference-museum.png') center center / cover no-repeat !important;
+      url('assets/hero-reference-museum.jpg') center center / cover no-repeat !important;
   }
 
   .premium-hero .container.hero-grid {
@@ -3426,7 +3426,7 @@ h1{font-size:clamp(2.45rem,5vw,4.7rem);font-weight:850;line-height:1.02}h2{font-
     min-height: 560px !important;
     background:
       linear-gradient(180deg, rgba(6, 40, 74, .98) 0%, rgba(6, 40, 74, .9) 58%, rgba(6, 40, 74, .62) 100%),
-      url('assets/hero-reference-museum.png') center center / cover no-repeat !important;
+      url('assets/hero-reference-museum.jpg') center center / cover no-repeat !important;
   }
 
   .premium-hero .container.hero-grid {
@@ -4439,7 +4439,7 @@ img[data-god-result-image] {
 }
 
 /* Startseite Slideshow: Handelsrouten-Bild sauber einpassen */
-img[src$="wikinger-navigation-seefahrt-museum-saarbruecken.png"] {
+img[src$="wikinger-navigation-seefahrt-museum-saarbruecken.jpg"] {
   object-fit: cover;
   object-position: center center;
 }
