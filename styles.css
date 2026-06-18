@@ -5015,3 +5015,42 @@ main > section:nth-of-type(7) {
   object-fit: cover !important;
   border-radius: 24px !important;
 }
+
+/* FINAL FIX: Ausstellungskarten mobil sauber untereinander */
+@media (max-width: 640px) {
+  .exhibition-card {
+    display: flex !important;
+    flex-direction: column !important;
+    overflow: hidden !important;
+  }
+
+  .exhibition-card img {
+    display: block !important;
+    width: 100% !important;
+    height: auto !important;
+    max-height: none !important;
+    position: static !important;
+    object-fit: cover !important;
+  }
+
+  .exhibition-card .card-content,
+  .exhibition-card .exhibition-card-content,
+  .exhibition-card .card-body {
+    position: static !important;
+    transform: none !important;
+    margin-top: 0 !important;
+    padding: 1.5rem !important;
+  }
+
+  .exhibition-card .icon,
+  .exhibition-card .card-icon,
+  .exhibition-card .material-symbols-rounded {
+    position: static !important;
+    transform: none !important;
+    margin-bottom: 1rem !important;
+  }
+
+  .exhibition-card h3 {
+    margin-top: 0 !important;
+  }
+}
