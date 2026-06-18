@@ -120,7 +120,7 @@ h1{font-size:clamp(2.45rem,5vw,4.7rem);font-weight:850;line-height:1.02}h2{font-
       rgba(6,40,74,.72) 44%,
       rgba(6,40,74,.26) 64%,
       rgba(6,40,74,.03) 100%),
-    url('assets/hero-reference-museum.jpg') center center/cover no-repeat!important;
+    url('hero-reference-museum.jpg') center center/cover no-repeat!important;
 }
 .premium-hero::before,
 .premium-hero::after{display:none!important;content:none!important;}
@@ -198,7 +198,7 @@ h1{font-size:clamp(2.45rem,5vw,4.7rem);font-weight:850;line-height:1.02}h2{font-
     height:auto!important;
     background:
       linear-gradient(90deg,rgba(6,40,74,.98) 0%,rgba(6,40,74,.88) 52%,rgba(6,40,74,.30) 100%),
-      url('assets/hero-reference-museum.jpg') center center/cover no-repeat!important;
+      url('hero-reference-museum.jpg') center center/cover no-repeat!important;
   }
   .premium-hero .container.hero-grid{padding:4rem 0!important;}
 }
@@ -208,7 +208,7 @@ h1{font-size:clamp(2.45rem,5vw,4.7rem);font-weight:850;line-height:1.02}h2{font-
     min-height:520px!important;
     background:
       linear-gradient(180deg,rgba(6,40,74,.98) 0%,rgba(6,40,74,.88) 56%,rgba(6,40,74,.52) 100%),
-      url('assets/hero-reference-museum.jpg') center center/cover no-repeat!important;
+      url('hero-reference-museum.jpg') center center/cover no-repeat!important;
   }
   .premium-hero .container.hero-grid{width:min(var(--max),calc(100% - 28px))!important;padding:3.4rem 0!important;}
   .premium-hero .hero-copy h1{font-size:2.35rem!important;}
@@ -229,7 +229,7 @@ h1{font-size:clamp(2.45rem,5vw,4.7rem);font-weight:850;line-height:1.02}h2{font-
       rgba(6,40,74,.72) 43%,
       rgba(6,40,74,.28) 62%,
       rgba(6,40,74,.05) 100%),
-    url('assets/hero-reference-museum.jpg') center center/cover no-repeat!important;
+    url('hero-reference-museum.jpg') center center/cover no-repeat!important;
 }
 .premium-hero .container.hero-grid{
   width:min(1180px,calc(100% - 40px))!important;
@@ -364,7 +364,7 @@ h1{font-size:clamp(2.45rem,5vw,4.7rem);font-weight:850;line-height:1.02}h2{font-
     height:auto!important;
     background:
       linear-gradient(90deg,rgba(6,40,74,.98) 0%,rgba(6,40,74,.88) 54%,rgba(6,40,74,.34) 100%),
-      url('assets/hero-reference-museum.jpg') center center/cover no-repeat!important;
+      url('hero-reference-museum.jpg') center center/cover no-repeat!important;
   }
   .premium-hero .container.hero-grid{padding:4.8rem 0!important;}
   .museum-worlds{grid-template-columns:repeat(2,minmax(0,1fr))!important;}
@@ -374,7 +374,7 @@ h1{font-size:clamp(2.45rem,5vw,4.7rem);font-weight:850;line-height:1.02}h2{font-
     min-height:560px!important;
     background:
       linear-gradient(180deg,rgba(6,40,74,.98) 0%,rgba(6,40,74,.88) 58%,rgba(6,40,74,.60) 100%),
-      url('assets/hero-reference-museum.jpg') center center/cover no-repeat!important;
+      url('hero-reference-museum.jpg') center center/cover no-repeat!important;
   }
   .premium-hero .container.hero-grid{width:min(1180px,calc(100% - 28px))!important;padding:4rem 0!important;}
   .premium-hero .hero-copy h1{font-size:2.35rem!important;}
@@ -3312,7 +3312,7 @@ h1{font-size:clamp(2.45rem,5vw,4.7rem);font-weight:850;line-height:1.02}h2{font-
       rgba(6, 40, 74, .72) 44%,
       rgba(6, 40, 74, .28) 62%,
       rgba(6, 40, 74, .04) 100%),
-    url('assets/hero-reference-museum.jpg') center center / cover no-repeat !important;
+    url('hero-reference-museum.jpg') center center / cover no-repeat !important;
 }
 
 .premium-hero::before,
@@ -3412,7 +3412,7 @@ h1{font-size:clamp(2.45rem,5vw,4.7rem);font-weight:850;line-height:1.02}h2{font-
     height: auto !important;
     background:
       linear-gradient(90deg, rgba(6, 40, 74, .98) 0%, rgba(6, 40, 74, .88) 56%, rgba(6, 40, 74, .36) 100%),
-      url('assets/hero-reference-museum.jpg') center center / cover no-repeat !important;
+      url('hero-reference-museum.jpg') center center / cover no-repeat !important;
   }
 
   .premium-hero .container.hero-grid {
@@ -3426,7 +3426,7 @@ h1{font-size:clamp(2.45rem,5vw,4.7rem);font-weight:850;line-height:1.02}h2{font-
     min-height: 560px !important;
     background:
       linear-gradient(180deg, rgba(6, 40, 74, .98) 0%, rgba(6, 40, 74, .9) 58%, rgba(6, 40, 74, .62) 100%),
-      url('assets/hero-reference-museum.jpg') center center / cover no-repeat !important;
+      url('hero-reference-museum.jpg') center center / cover no-repeat !important;
   }
 
   .premium-hero .container.hero-grid {
