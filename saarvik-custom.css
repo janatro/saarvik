@@ -1,0 +1,357 @@
+/* =========================================================
+   saarvik-custom.css
+   Schnelle, sichere Änderungen
+   ---------------------------------------------------------
+   Diese Datei wird nach styles.css geladen.
+   Für kurzfristige Anpassungen hier arbeiten, nicht direkt in
+   den Moduldateien. So bleibt die Hauptstruktur stabil.
+   v8 Hinweis: v7.1 bleibt als Backup im ZIP erhalten.
+   ========================================================= */
+
+/* =========================================================
+   SAARVIK Custom CSS – sichere Änderungsdatei
+   =========================================================
+
+   Diese Datei wird NACH styles.css geladen.
+   Nutze sie für kleine Änderungen bis zur Abgabe, damit du nicht mehr
+   in der riesigen styles.css suchen musst.
+
+   Wichtig:
+   - Normale Regeln hier überschreiben normale Regeln aus styles.css.
+   - Regeln aus styles.css mit !important überschreibst du nur mit
+     gleicher/gezielter Regel + !important.
+   - Bitte nur unten im Bereich "Eigene Änderungen" arbeiten.
+
+   Beispiel:
+   .premium-hero {
+     padding-top: 7rem !important;
+   }
+
+   ========================================================= */
+
+/* ---------- Häufige Stellschrauben ---------- */
+:root {
+  /* Farben nur ändern, wenn wirklich nötig */
+  /* --gold: #c9a34e; */
+  /* --navy: #102033; */
+  /* --petrol: #315f63; */
+
+  /* Kleine Abstands-Anpassungen kannst du hier zentral sammeln */
+  --saarvik-page-gap: clamp(3rem, 6vw, 6rem);
+}
+
+/* ---------- Eigene Änderungen für die Abgabe ---------- */
+
+/* Schreibe neue Fixes ab hier. */
+
+
+/* =========================================================
+   V6.1 – gezielte Wiederherstellung Wikinger-Abenteuer
+   ---------------------------------------------------------
+   Diese Regeln behalten die stark bereinigte v6 bei, holen aber
+   die versehentlich entfernten dynamischen Styles zurück.
+   Betroffen: Wikingerpass-Münze, Quiz-/Story-Buttons, Gottheit-Quiz.
+   ========================================================= */
+
+/* Wikingerpass: Münze wieder kompakt und stabil anzeigen */
+.museum-pass-card .pass-coin-wrap .coin,
+.pass-coin-wrap .coin {
+  width: 86px;
+  height: 86px;
+  min-width: 86px;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: none;
+  box-shadow: none;
+  filter: drop-shadow(0 3px 5px rgba(0, 0, 0, .18));
+  animation: none;
+  transform: none;
+  overflow: visible;
+}
+
+.museum-pass-card .pass-coin-wrap .coin img,
+.pass-coin-wrap .coin img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  display: block;
+  border-radius: 0;
+  box-shadow: none;
+}
+
+.museum-pass-card .coin::before,
+.museum-pass-card .coin::after,
+.pass-coin-wrap .coin::before,
+.pass-coin-wrap .coin::after {
+  display: none;
+  content: none;
+}
+
+/* Pass-Karte: saubere horizontale Desktop-Aufteilung */
+.museum-pass-card.pass-preview,
+.museum-pass-card.pass-dashboard {
+  display: grid;
+  grid-template-columns: 110px minmax(280px, 1fr) minmax(260px, .8fr) auto;
+  align-items: center;
+  gap: clamp(1.3rem, 2.4vw, 2rem);
+  text-align: left;
+}
+
+.museum-pass-card .pass-copy {
+  max-width: 380px;
+}
+
+.museum-pass-card .pass-button {
+  justify-self: end;
+  white-space: nowrap;
+}
+
+/* Dynamisch erzeugte Quiz- und Story-Buttons wieder als große Karten */
+.quiz-options,
+.story-options {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1rem;
+  margin-top: 1.2rem;
+}
+
+.choice-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: .85rem;
+  margin-top: .85rem;
+}
+
+.question-card {
+  background: #fffdf8;
+  color: var(--ink);
+  border: 1px solid rgba(6, 40, 74, .08);
+  border-radius: 22px;
+  box-shadow: var(--card-shadow, 0 12px 30px rgba(6, 40, 74, .09));
+  padding: 1.55rem;
+}
+
+.choice-card,
+.option {
+  appearance: none;
+  border: 1px solid rgba(6, 40, 74, .10);
+  border-radius: 18px;
+  background: #fffdf8;
+  color: var(--ink);
+  box-shadow: 0 8px 22px rgba(6, 40, 74, .07);
+  padding: 1.05rem 1.25rem;
+  min-height: 58px;
+  font: inherit;
+  font-weight: 800;
+  text-align: left;
+  cursor: pointer;
+  transition: transform .18s ease, box-shadow .18s ease, border-color .18s ease, background-color .18s ease;
+}
+
+.choice-card:hover,
+.option:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 16px 34px rgba(6, 40, 74, .11);
+  border-color: rgba(200, 155, 71, .45);
+}
+
+.choice-card.selected,
+.option.selected,
+.option[aria-pressed="true"] {
+  background: #fffdf8;
+  color: var(--ink);
+  border-color: var(--gold);
+  box-shadow: 0 0 0 3px rgba(200, 155, 71, .14), 0 12px 30px rgba(6, 40, 74, .09);
+}
+
+/* Gottheit-Quiz und Storybereich: Abstand und Lesbarkeit */
+.visual-quiz {
+  display: grid;
+  gap: 1.2rem;
+}
+
+.story-card h2,
+.question-card h3 {
+  margin-top: 0;
+}
+
+/* Mobile: Pass-Karte untereinander, aber ohne übergroße Münze */
+@media (max-width: 900px) {
+  .museum-pass-card.pass-preview,
+  .museum-pass-card.pass-dashboard {
+    grid-template-columns: 90px 1fr;
+  }
+
+  .museum-pass-card .pass-copy,
+  .museum-pass-card .pass-button {
+    grid-column: 2;
+    justify-self: start;
+  }
+}
+
+@media (max-width: 640px) {
+  .museum-pass-card.pass-preview,
+  .museum-pass-card.pass-dashboard {
+    grid-template-columns: 1fr;
+    padding: 1.4rem;
+  }
+
+  .museum-pass-card .pass-coin-wrap {
+    justify-content: flex-start;
+  }
+
+  .museum-pass-card .pass-copy,
+  .museum-pass-card .pass-button {
+    grid-column: auto;
+  }
+
+  .museum-pass-card .pass-button {
+    width: 100%;
+    justify-self: stretch;
+  }
+
+  .museum-pass-card .pass-coin-wrap .coin,
+  .pass-coin-wrap .coin {
+    width: 76px;
+    height: 76px;
+    min-width: 76px;
+  }
+}
+
+/* =========================================================
+   v6.2: Wikingerpass-Münze wieder animieren
+   ---------------------------------------------------------
+   Die Münze bleibt klein/stabil, dreht sich aber wieder um
+   die eigene Achse wie in der ursprünglichen Version.
+   ========================================================= */
+.pass-coin-wrap {
+  perspective: 900px;
+}
+
+.museum-pass-card .pass-coin-wrap .coin,
+.pass-coin-wrap .coin {
+  animation: saarvikCoinSpin 2.8s linear infinite;
+  transform-style: preserve-3d;
+  backface-visibility: visible;
+  will-change: transform;
+}
+
+@keyframes saarvikCoinSpin {
+  from {
+    transform: rotateY(0deg);
+  }
+  to {
+    transform: rotateY(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .museum-pass-card .pass-coin-wrap .coin,
+  .pass-coin-wrap .coin {
+    animation: none;
+  }
+}
+
+/* =======================================================
+   V12 Fix: Gottheit-Finder Ergebnis wieder kompakt
+   -------------------------------------------------------
+   Begrenzt die Ergebnisgrafik und stellt die dunkle Ergebnis-Karte
+   wieder her, ohne andere Wikinger-Abenteuer-Spiele zu verändern.
+======================================================= */
+#godResult {
+  margin-top: 1.6rem;
+}
+
+#godResult .god-result-card,
+#godResult .refined-god-result {
+  display: grid;
+  grid-template-columns: minmax(220px, 300px) 1fr;
+  align-items: center;
+  gap: clamp(2rem, 5vw, 4rem);
+  background: var(--navy, #06284a);
+  color: #fff;
+  border-radius: 32px;
+  padding: clamp(2rem, 4vw, 3.4rem);
+  box-shadow: var(--soft, 0 18px 44px rgba(6, 40, 74, .16));
+}
+
+#godResult .god-image-wrap,
+#godResult .god-portrait-frame {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  min-height: 300px;
+  background: #fffdf8;
+  border: 1px solid rgba(200, 155, 71, .26);
+  border-radius: 24px;
+  overflow: hidden;
+  padding: 1.4rem;
+}
+
+#godResult .god-image-wrap img,
+#godResult .god-portrait-frame img,
+#godResult .god-result-card img,
+#godResult .refined-god-result img {
+  display: block;
+  width: auto;
+  max-width: 230px;
+  max-height: 260px;
+  height: auto;
+  object-fit: contain;
+  object-position: center;
+  margin: 0 auto;
+  background: transparent;
+  border: 0;
+  box-shadow: none;
+}
+
+#godResult .god-result-copy .eyebrow {
+  color: var(--gold, #c89b47);
+}
+
+#godResult .god-result-copy h2 {
+  color: #fff;
+  font-size: clamp(3rem, 7vw, 5rem);
+  line-height: .95;
+  margin: .35rem 0 .4rem;
+}
+
+#godResult .god-result-copy h3 {
+  color: #fff;
+  font-size: clamp(1.5rem, 3vw, 2rem);
+  margin: 0 0 1.2rem;
+}
+
+#godResult .god-result-copy p {
+  color: rgba(255,255,255,.82);
+}
+
+#godResult .god-score {
+  border-top: 1px solid rgba(255,255,255,.15);
+  margin-top: 1.4rem;
+  padding-top: 1.4rem;
+}
+
+@media (max-width: 760px) {
+  #godResult .god-result-card,
+  #godResult .refined-god-result {
+    grid-template-columns: 1fr;
+    padding: 1.6rem;
+  }
+
+  #godResult .god-image-wrap,
+  #godResult .god-portrait-frame {
+    min-height: 240px;
+  }
+
+  #godResult .god-image-wrap img,
+  #godResult .god-portrait-frame img,
+  #godResult .god-result-card img,
+  #godResult .refined-god-result img {
+    max-width: 190px;
+    max-height: 220px;
+  }
+}
