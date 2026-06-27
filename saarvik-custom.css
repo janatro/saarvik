@@ -355,3 +355,153 @@
     max-height: 220px;
   }
 }
+
+
+/* =======================================================
+   HSKL / DIGITAL MEDIA MARKETING PROMO
+   Orientierung am neuen HSKL-CI: Schwarz, Weiß, Cyan, Gelb, Grün,
+   kräftige Flächen und klare Typografie.
+======================================================= */
+.dmm-ci-promo {
+  position: relative;
+  isolation: isolate;
+  max-width: 1120px;
+  margin: clamp(3rem, 7vw, 5rem) auto;
+  padding: 0 clamp(1rem, 4vw, 2rem);
+}
+
+.dmm-ci-promo__inner {
+  position: relative;
+  z-index: 1;
+  display: grid;
+  grid-template-columns: minmax(220px, .85fr) minmax(0, 1.4fr);
+  gap: clamp(1.4rem, 4vw, 3rem);
+  align-items: center;
+  padding: clamp(1.5rem, 4vw, 3rem);
+  border-radius: 0;
+  background: #f3f707;
+  color: #000;
+  box-shadow: 0 28px 70px rgba(0, 0, 0, .13);
+  overflow: hidden;
+}
+
+.dmm-ci-promo__inner::after {
+  content: "";
+  position: absolute;
+  right: -9%;
+  top: -18%;
+  width: 34%;
+  aspect-ratio: 1;
+  background: #38d5ff;
+  z-index: -1;
+}
+
+.dmm-ci-promo__brand {
+  background: #fff;
+  padding: clamp(1.2rem, 3vw, 2rem);
+  min-height: 160px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.dmm-ci-promo__brand img {
+  display: block;
+  width: min(100%, 260px);
+  height: auto;
+}
+
+.dmm-ci-promo__eyebrow {
+  margin: 0 0 .75rem;
+  color: #000;
+  font-size: .86rem;
+  font-weight: 900;
+  line-height: 1.1;
+  letter-spacing: .16em;
+  text-transform: uppercase;
+}
+
+.dmm-ci-promo h2 {
+  margin: 0 0 .8rem;
+  color: #000;
+  font-size: clamp(2.1rem, 5vw, 4rem);
+  line-height: .92;
+  letter-spacing: -.05em;
+  font-weight: 900;
+}
+
+.dmm-ci-promo p:not(.dmm-ci-promo__eyebrow) {
+  max-width: 58ch;
+  margin: 0;
+  color: #000;
+  font-size: clamp(1rem, 2vw, 1.18rem);
+  line-height: 1.55;
+  font-weight: 650;
+}
+
+.dmm-ci-promo__link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: .55rem;
+  margin-top: 1.4rem;
+  padding: .95rem 1.25rem;
+  background: #000;
+  color: #fff;
+  text-decoration: none;
+  font-weight: 900;
+  border: 2px solid #000;
+  transition: transform .2s ease, background .2s ease, color .2s ease;
+}
+
+.dmm-ci-promo__link:hover,
+.dmm-ci-promo__link:focus-visible {
+  transform: translateY(-2px);
+  background: #fff;
+  color: #000;
+}
+
+.dmm-ci-promo__shape {
+  position: absolute;
+  z-index: 0;
+  pointer-events: none;
+}
+
+.dmm-ci-promo__shape--blue {
+  left: clamp(.2rem, 4vw, 2rem);
+  bottom: -1rem;
+  width: min(28vw, 220px);
+  height: min(16vw, 110px);
+  background: #38d5ff;
+}
+
+.dmm-ci-promo__shape--green {
+  right: clamp(.4rem, 6vw, 3rem);
+  top: -1.1rem;
+  width: min(22vw, 160px);
+  height: min(18vw, 130px);
+  background: #d2f2e1;
+}
+
+@media (max-width: 760px) {
+  .dmm-ci-promo {
+    margin: 3rem auto;
+  }
+
+  .dmm-ci-promo__inner {
+    grid-template-columns: 1fr;
+    padding: 1.35rem;
+  }
+
+  .dmm-ci-promo__brand {
+    min-height: 118px;
+  }
+
+  .dmm-ci-promo__brand img {
+    max-width: 210px;
+  }
+
+  .dmm-ci-promo__link {
+    width: 100%;
+  }
+}
