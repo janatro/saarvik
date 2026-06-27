@@ -1,0 +1,206 @@
+/* =========================================================
+   03-pages-museum-adventure.css
+   Museum-Seiten und Wikinger-Abenteuer Grundlayout
+   ========================================================= */
+
+/* =========================================================
+   20-museum-and-adventure-core.css
+   Museum-Look, Hero-Varianten, Wikingerpass-Grundregeln
+   Aus styles.css v6.2 extrahiert; Reihenfolge bewusst beibehalten.
+   ========================================================= */
+
+:root { --navy:#06284A; --sand:#F4EFE3; --paper:#fffdf7; --gold:#C89B47; --ink:#162235; --muted:#69778a; --radius:22px; --soft:0 12px 34px rgba(6,40,74,.10); --shadow:0 18px 48px rgba(6,40,74,.12)
+; }
+body { font-family:Inter,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif; background:linear-gradient(180deg,#fffdf8 0%,#f7f2e8 100%); color:var(--ink); }
+body:before { display:none; }
+h1 { font-size:clamp(2.45rem,5vw,4.8rem); font-weight:850; }
+.eyebrow { letter-spacing:.14em; }
+.topbar { background:rgba(255,253,247,.92); border-bottom:1px solid rgba(6,40,74,.08); }
+.nav { height:74px; }
+.brand { letter-spacing:.06em; }
+.brand img { width:58px; height:44px; }
+.premium-hero { min-height:590px; padding:72px 0; background:linear-gradient(135deg,#06284A 0%,#0a335d 100%); }
+.premium-hero:after, .page-hero:after { background:radial-gradient(circle at 78% 24%,rgba(200,155,71,.16),transparent 28%); opacity:1; }
+.hero-grid { grid-template-columns:minmax(0,1.02fr) minmax(340px,.88fr); gap:4rem; }
+.hero-copy .lead { max-width:680px; font-size:1.09rem; line-height:1.75; color:rgba(255,255,255,.82); }
+.section { padding:70px 0; }
+.compact { padding:58px 0; }
+.world, .info-panel, .card-form, .story-card, .role-card, .visit-panel, .map-placeholder { border-radius:22px; border:1px solid rgba(6,40,74,.10); box-shadow:var(--soft); background:#fffdf7; color:var(--ink); }
+.world:before { display:none; }
+.world .material-symbols-rounded { width:44px; height:44px; display:inline-grid; place-items:center; font-size:28px; line-height:1; color:var(--gold); margin:0 0 1.15rem 0; background:rgba(200,155,71,.10); border-radius:14px; }
+.world h3 { margin:0 0 .65rem 0; font-size:1.2rem; }
+.world p { margin:0; color:#536174; }
+.world:hover, .role-card:hover { transform:translateY(-2px); box-shadow:0 16px 38px rgba(6,40,74,.11); }
+.pass-ornate, .pass-dashboard, .pass-preview { background:linear-gradient(145deg,#082d52,#06284A); border:1px solid rgba(200,155,71,.28); box-shadow:0 18px 42px rgba(6,40,74,.16); }
+.pass-ornate { padding:1.65rem; }
+.coin { width:76px; height:76px; animation:coinMuseumSpin 6.5s linear infinite; box-shadow:inset -9px -7px 16px rgba(72,48,16,.26),inset 7px 5px 14px rgba(255,255,255,.20),0 10px 22px rgba(0,0,0,.14); }
+.coin:after { opacity:.32; animation:coinMuseumShine 3.4s linear infinite; }
+@keyframes coinMuseumSpin {
+from { transform:rotateY(0deg); }
+to { transform:rotateY(360deg); }
+}
+@keyframes coinMuseumShine {
+from { transform:translateX(-45%) rotate(16deg); opacity:.14; }
+50% { opacity:.34; }
+to { transform:translateX(45%) rotate(16deg); opacity:.14; }
+}
+.progress { height:10px; background:rgba(255,255,255,.17); }
+.progress span { background:linear-gradient(90deg,#C89B47,#e6c474); box-shadow:none; }
+.rune-translator { gap:1.7rem; }
+.rune-translator>div:first-child { padding:1.8rem; }
+.rune-stone { background:linear-gradient(145deg,#71777d,#39424a 58%,#242b31); border-radius:24px; min-height:430px; box-shadow:inset 0 0 38px rgba(0,0,0,.28),0 14px 32px rgba(6,40,74,.12); padding:2.25rem; }
+.rune-stone:before { content:""; position:absolute; inset:12px; border:1px solid rgba(255,255,255,.08); border-radius:18px; pointer-events:none; }
+.rune-stone { position:relative; }
+.rune-stone output { font-size:clamp(2rem,4.5vw,4.4rem); letter-spacing:.04em; color:#fff4dc; }
+.certificate-empty { display:grid; place-items:center; text-align:center; color:#718096; }
+.role-card { padding:1.25rem; text-align:left; }
+.footer { padding:38px 0; }
+.footer-grid { align-items:start; }
+.footer-logo { width:70px; }
+@media (max-width:980px) {
+.hero-grid { grid-template-columns:1fr; gap:2.2rem; }
+.section, .compact { padding:50px 0; }
+}
+@media (max-width:640px) {
+.premium-hero { padding:48px 0; }
+}
+.world:after, .pass-ornate:after { display:none; content:none; }
+.premium-hero:after, .page-hero:after { background:radial-gradient(circle at 82% 22%,rgba(200,155,71,.12),transparent 26%); }
+.world, .info-panel, .card-form, .story-card, .role-card, .visit-panel, .map-placeholder { padding:1.65rem; border-radius:22px; box-shadow:0 12px 30px rgba(6,40,74,.09); }
+.world { display:flex; flex-direction:column; align-items:flex-start; }
+.material-symbols-rounded { font-variation-settings:"FILL" 0,"wght" 500,"GRAD" 0,"opsz" 24; }
+.world .material-symbols-rounded { flex:0 0 44px; width:44px; height:44px; font-size:26px; margin:0 0 1rem; display:grid; place-items:center; }
+.pass-ornate, .pass-dashboard, .pass-preview { box-shadow:0 14px 34px rgba(6,40,74,.14); background:linear-gradient(145deg,#092b4e,#06284A); }
+.pass-preview.pass-ornate, .pass-dashboard { display:flex; flex-direction:column; align-items:flex-start; gap:.6rem; }
+.pass-preview .coin, .pass-dashboard .coin { margin-bottom:1.25rem; }
+.coin { width:78px; height:78px; animation:coinAxisSpin 7.2s linear infinite; transform-origin:50% 50%; transform-style:preserve-3d; box-shadow:inset -8px -8px 15px rgba(73,48,16,.23),inset 8px 6px 14px rgba(255,255,255,.23),0 6px 14px rgba(0,0,0,.10); background:radial-gradient(circle at 35% 28%,#fff4b8 0 7%,#e6c070 18%,#c89b47 42%,#8e682b 72%,#5a3c15 100%); }
+.coin:before { content:"SV"; font-family:Inter,system-ui,sans-serif; font-size:1.05rem; font-weight:900; letter-spacing:.02em; color:#4f3513; border:2px solid rgba(82,46,18,.44); inset:13px; }
+.coin:after { opacity:.22; animation:coinSoftGlint 7.2s linear infinite; mix-blend-mode:screen; }
+@keyframes coinAxisSpin {
+0% { transform:rotateY(0deg); }
+100% { transform:rotateY(360deg); }
+}
+@keyframes coinSoftGlint {
+0%, 100% { opacity:.12; }
+48%, 54% { opacity:.32; }
+}
+.pass-ornate .eyebrow { margin-top:.15rem; }
+.pass-ornate h2, .pass-ornate h3 { margin-top:.15rem; }
+@media (max-width:640px) {
+.pass-preview .coin, .pass-dashboard .coin { margin-bottom:1rem; }
+}
+@media (prefers-reduced-motion:reduce) {
+.coin { animation:coinAxisSpin 7.2s linear infinite; }
+.coin:after { animation:coinSoftGlint 7.2s linear infinite; }
+}
+.world:after, .pass-ornate:after { content:none; display:none; }
+:root { --navy:#06284A; --paper:#F4EFE3; --gold:#C89B47; --card-shadow:0 12px 28px rgba(6,40,74,.10); --card-shadow-hover:0 18px 42px rgba(6,40,74,.13); --card-radius:18px; }
+body { font-family:Inter,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif; background:linear-gradient(180deg,#fffdf8 0%,#F4EFE3 100%); }
+body:before { display:none; content:none; }
+h1, h2, h3, .brand { font-family:Inter,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif; letter-spacing:-.035em; }
+h1 { font-size:clamp(2.45rem,5vw,4.7rem); font-weight:850; line-height:1.02; }
+h2 { font-weight:820; }
+h3 { font-weight:780; }
+.eyebrow { letter-spacing:.16em; color:var(--gold); }
+.premium-hero { min-height:610px; background:linear-gradient(90deg,#06284A 0%,#06284A 35%,rgba(6,40,74,.88) 50%,rgba(6,40,74,.40) 100%),url("../assets/hero-museum-object.svg") right center/auto 100% no-repeat; color:#fff; }
+.premium-hero:after { display:none; content:none; }
+.hero-grid { grid-template-columns:minmax(0,.92fr) minmax(390px,.9fr); gap:3.2rem; }
+.hero-copy { max-width:620px; }
+.hero-copy .lead { font-size:1.05rem; line-height:1.72; max-width:570px; color:rgba(255,255,255,.86); }
+.world, .info-panel, .card-form, .story-card, .role-card, .visit-panel, .map-placeholder, .pass-ornate { border-radius:var(--card-radius); box-shadow:var(--card-shadow); border:1px solid rgba(6,40,74,.08); background:#fffdf8; padding:1.55rem; }
+.world:hover, .role-card:hover { box-shadow:var(--card-shadow-hover); transform:translateY(-2px); }
+.world:before, .world:after, .pass-ornate:before, .pass-ornate:after { display:none; content:none; }
+.material-symbols-rounded { vertical-align:middle; }
+.pass-preview.pass-ornate, .pass-dashboard, .pass-ornate { background:linear-gradient(145deg,#092b4f 0%,#06284A 100%); color:#fff; border:1px solid rgba(200,155,71,.24); }
+.pass-preview.pass-ornate, .pass-dashboard { align-items:center; text-align:center; gap:.55rem; padding:2rem 2.2rem; }
+.pass-preview .coin, .pass-dashboard .coin, .coin { margin:0 auto 1.9rem; display:block; }
+.coin { position:relative; width:78px; height:78px; border-radius:50%; background:radial-gradient(circle at 35% 30%,#fff3b0 0 7%,#e4bf6b 19%,#C89B47 45%,#8f6627 72%,#5b3c15 100%); box-shadow:inset -7px -7px 14px rgba(67,43,13,.24),inset 7px 5px 12px rgba(255,255,255,.22),0 4px 10px rgba(0,0,0,.10); animation:saarvikCoinSpin 7s linear infinite; transform-origin:50% 50%; transform-style:preserve-3d; will-change:transform; }
+.coin:before { content:"SV"; position:absolute; inset:14px; border-radius:50%; display:grid; place-items:center; border:2px solid rgba(81,50,16,.40); color:#513410; font-family:Inter,system-ui,sans-serif; font-size:1.05rem; font-weight:900; letter-spacing:.02em; }
+.coin:after { content:""; position:absolute; inset:0; border-radius:50%; background:linear-gradient(110deg,transparent 18%,rgba(255,255,255,.28) 44%,transparent 62%); opacity:.18; animation:saarvikCoinGlint 7s linear infinite; pointer-events:none; }
+.coin * { transform:none; }
+@keyframes saarvikCoinSpin {
+from { transform:rotateY(0deg); }
+to { transform:rotateY(360deg); }
+}
+@keyframes saarvikCoinGlint {
+0%, 100% { opacity:.12; }
+48%, 54% { opacity:.24; }
+}
+.pass-ornate .eyebrow { margin-top:.15rem; color:#d7b36a; }
+.progress { height:9px; border-radius:999px; background:rgba(255,255,255,.14); overflow:hidden; }
+.progress span { background:linear-gradient(90deg,#C89B47,#e4c26f); box-shadow:none; }
+[class*="rune"]:not(.rune-translator):not(.rune-stone):not(#runeInput):not(#runeOutput) { background-image:none; }
+.rank-list:after, .rank-list:before, .game-panel:after, .game-panel:before { display:none; content:none; }
+.rune-stone { background:linear-gradient(145deg,#5f6971 0%,#3f474f 58%,#283039 100%); box-shadow:inset 0 0 28px rgba(0,0,0,.18),var(--card-shadow); }
+.rune-stone:before { border-color:rgba(255,255,255,.08); }
+.rune-stone output { font-family:"Noto Sans Runic",Inter,system-ui,sans-serif; }
+@media (max-width:980px) {
+.premium-hero { background:linear-gradient(180deg,#06284A 0%,rgba(6,40,74,.92) 48%,rgba(6,40,74,.78) 100%),url("../assets/hero-museum-object.svg") center bottom/cover no-repeat; padding:70px 0; }
+.hero-grid { grid-template-columns:1fr; }
+}
+@media (max-width:640px) {
+.premium-hero { min-height:auto; }
+.pass-preview.pass-ornate, .pass-dashboard { padding:1.5rem; }
+.coin { width:70px; height:70px; margin-bottom:1.5rem; }
+}
+@media (prefers-reduced-motion:reduce) {
+.coin { animation:saarvikCoinSpin 7s linear infinite; }
+.coin:after { animation:saarvikCoinGlint 7s linear infinite; }
+}
+:root { --card-radius:18px; --card-shadow:0 12px 28px rgba(6,40,74,.10); --card-shadow-hover:0 16px 36px rgba(6,40,74,.13)
+; }
+.premium-hero { min-height:560px; background:linear-gradient(90deg,#06284A 0%,rgba(6,40,74,.96) 30%,rgba(6,40,74,.68) 54%,rgba(6,40,74,.08) 100%),url("../assets/hero-museum-photo.jpg") center center/cover no-repeat; color:#fff; display:grid; align-items:center; }
+.premium-hero:after { display:none; }
+.premium-hero .hero-grid { grid-template-columns:minmax(0,650px); gap:0; }
+.hero-copy { padding:4.4rem 0 4.8rem; max-width:620px; }
+.hero-copy h1 { font-family:Inter,system-ui,sans-serif; font-size:clamp(2.4rem,4.2vw,4.35rem); line-height:1.02; letter-spacing:-.055em; }
+.hero-copy .lead { font-size:1.05rem; line-height:1.72; color:rgba(255,255,255,.9); max-width:560px; }
+.world:before, .world:after, .pass-ornate:before, .pass-ornate:after, .rank-list:before, .rank-list:after { display:none; content:none; }
+.museum-worlds { display:grid; grid-template-columns:repeat(5,minmax(0,1fr)); gap:1.35rem; }
+.image-world { padding:0; overflow:hidden; border-radius:var(--card-radius); box-shadow:var(--card-shadow); border:1px solid rgba(6,40,74,.08); background:#fffdf8; }
+.image-world img { width:100%; height:132px; object-fit:cover; }
+.image-world>div { display:grid; grid-template-columns:34px 1fr; column-gap:.65rem; padding:1.15rem 1.1rem 1.25rem; align-items:start; }
+.image-world .material-symbols-rounded { grid-row:1/3; width:28px; height:28px; margin:.05rem 0 0; font-size:22px; color:var(--gold); background:transparent; }
+.image-world h3 { font-family:Inter,system-ui,sans-serif; font-size:1rem; margin:0 0 .42rem; color:#0b2747; line-height:1.25; }
+.image-world p { grid-column:2; margin:0; color:#4f6074; font-size:.92rem; line-height:1.55; }
+.museum-pass-card.pass-ornate, .museum-pass-card.pass-dashboard, .museum-pass-card.pass-preview { width:100%; min-height:118px; display:grid; grid-template-columns:110px minmax(300px,1fr) minmax(260px,.8fr) auto; align-items:center; gap:1.8rem; padding:1.35rem 1.75rem; border-radius:16px; background:linear-gradient(135deg,#06284A 0%,#082f56 55%,#06284A 100%); color:#fff; border:1px solid rgba(200,155,71,.28); box-shadow:0 12px 30px rgba(6,40,74,.16); text-align:left; }
+.pass-coin-wrap { display:flex; align-items:center; justify-content:center; }
+.coin { width:86px; height:86px; min-width:86px; border-radius:50%; background:none; box-shadow:none; animation:saarvikAssetCoinSpin 7.5s linear infinite; transform-origin:50% 50%; transform-style:preserve-3d; will-change:transform; margin:0; overflow:visible; }
+.coin img { width:100%; height:100%; object-fit:contain; display:block; filter:drop-shadow(0 3px 5px rgba(0,0,0,.18)); backface-visibility:visible; }
+@keyframes saarvikAssetCoinSpin {
+from { transform:rotateY(0deg); }
+to { transform:rotateY(360deg); }
+}
+.pass-main { min-width:0; }
+.museum-pass-card .eyebrow { font-family:Inter,system-ui,sans-serif; font-size:.73rem; letter-spacing:.18em; color:#fff; margin:0 0 .42rem; font-weight:900; }
+.museum-pass-card h2, .museum-pass-card h3 { font-family:Inter,system-ui,sans-serif; font-size:1.28rem; line-height:1.1; margin:0 0 .35rem; color:#fff; }
+.museum-pass-card p { margin:0; color:rgba(255,255,255,.88); line-height:1.55; }
+.museum-pass-card .progress { width:min(100%,540px); height:8px; margin-top:1.05rem; background:rgba(255,255,255,.13); border-radius:999px; box-shadow:none; }
+.museum-pass-card .progress span { background:#d6aa55; box-shadow:none; border-radius:inherit; }
+.pass-copy { max-width:360px; }
+.btn-outline-gold { background:transparent; color:#d6aa55; border:1px solid #d6aa55; box-shadow:none; }
+.btn-outline-gold:hover { background:rgba(214,170,85,.1); transform:translateY(-1px); }
+.pass-button { white-space:nowrap; justify-self:end; min-width:174px; }
+.adventure-hero .split { grid-template-columns:1fr; }
+.adventure-hero .museum-pass-card { margin-top:1.8rem; }
+.pass-grid .pass-ornate { background:#fffdf8; color:var(--ink); border:1px solid rgba(6,40,74,.08); box-shadow:var(--card-shadow); }
+[class*="rune"]:not(.rune-translator):not(.rune-stone):not(#runeInput):not(#runeOutput) { background-image:none; }
+.world:after, .pass-ornate:after { display:none; content:none; }
+@media (max-width:1120px) {
+.museum-pass-card.pass-ornate, .museum-pass-card.pass-dashboard, .museum-pass-card.pass-preview { grid-template-columns:94px 1fr; gap:1.2rem; }
+.pass-copy, .pass-button { grid-column:2; justify-self:start; }
+.pass-button { margin-top:.25rem; }
+.coin { width:78px; height:78px; min-width:78px; }
+}
+@media (max-width:980px) {
+.premium-hero { min-height:auto; background:linear-gradient(180deg,#06284A 0%,rgba(6,40,74,.82) 50%,rgba(6,40,74,.68) 100%),url("../assets/hero-museum-photo.jpg") center center/cover no-repeat; }
+}
+@media (max-width:640px) {
+.container { width:min(var(--max),calc(100% - 28px)); }
+.hero-copy { padding:3.2rem 0; }
+.museum-pass-card.pass-ornate, .museum-pass-card.pass-dashboard, .museum-pass-card.pass-preview { grid-template-columns:1fr; text-align:left; padding:1.4rem; }
+.pass-coin-wrap { justify-content:flex-start; }
+.pass-copy, .pass-button { grid-column:auto; }
+.pass-button { width:100%; justify-self:stretch; }
+.coin { width:74px; height:74px; min-width:74px; }
+}

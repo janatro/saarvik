@@ -1,0 +1,26 @@
+/* =========================================================
+   00-settings.css
+   Design Tokens: Farben, Abstände, Schatten, Rundungen
+   ---------------------------------------------------------
+   Diese Datei zuerst bearbeiten, wenn globale Farben oder
+   Grundwerte geändert werden sollen.
+   ========================================================= */
+
+:root {
+   --navy:#061b35;
+  --blue:#092849;
+  --sky:#86aeca;
+  --sand:#f1eadb;
+  --paper:#fbf7ef;
+  --gold:#c99b47;
+  --bronze:#9b6b36;
+  --green:#13382f;
+  --stone:#d2d0c7;
+  --ink:#102033;
+  --muted:#667085;
+  --shadow:0 22px 60px rgba(6,27,53,.16);
+  --soft:0 10px 28px rgba(6,27,53,.12);
+  --radius:26px;
+  --max:1180px
+;
+}
