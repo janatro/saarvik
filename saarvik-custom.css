@@ -505,3 +505,65 @@
     width: 100%;
   }
 }
+
+.dmm-ci-promo {
+  max-width: 1120px;
+  margin: 4rem auto;
+  padding: 0 1.5rem;
+}
+
+.dmm-ci-promo__inner {
+  position: relative;
+  overflow: hidden;
+  display: grid;
+  grid-template-columns: 280px 1fr;
+  gap: 2rem;
+  align-items: center;
+  padding: 2rem;
+  border-radius: 28px;
+  background: #ffd500;
+  color: #050505;
+}
+
+.dmm-ci-promo__brand img {
+  display: block;
+  max-width: 240px;
+  width: 100%;
+  height: auto;
+}
+
+.dmm-ci-promo__eyebrow {
+  margin: 0 0 .5rem;
+  font-weight: 900;
+  letter-spacing: .12em;
+  text-transform: uppercase;
+  font-size: .85rem;
+}
+
+.dmm-ci-promo h2 {
+  margin: 0 0 .8rem;
+  color: #050505;
+}
+
+.dmm-ci-promo p {
+  max-width: 58ch;
+  color: #050505;
+}
+
+.dmm-ci-promo__link {
+  display: inline-flex;
+  margin-top: 1rem;
+  font-weight: 900;
+  color: #050505;
+  text-decoration: underline;
+}
+
+@media (max-width: 760px) {
+  .dmm-ci-promo__inner {
+    grid-template-columns: 1fr;
+  }
+
+  .dmm-ci-promo__brand img {
+    max-width: 220px;
+  }
+}
