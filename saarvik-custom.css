@@ -567,3 +567,11 @@
     max-width: 220px;
   }
 }
+
+
+/* Footer Social Media */
+.footer-social{display:flex;align-items:center;gap:18px;margin-top:18px}
+.footer-social a{color:#fff;font-size:1.45rem;transition:all .25s ease}
+.footer-social a:hover{color:#c89b3c;transform:translateY(-2px)}
+.footer-social a:focus-visible{outline:2px solid #c89b3c;outline-offset:4px}
+@media(max-width:768px){.footer-social{justify-content:center;margin-top:22px}}
