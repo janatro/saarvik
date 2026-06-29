@@ -679,3 +679,18 @@
     padding: 1.05rem;
   }
 }
+
+
+/* Finaler Feinschliff: gleichmäßige Ausrichtung der Kultur- und Recherchekarten */
+.civic-card {
+  display: flex;
+  flex-direction: column;
+}
+
+.civic-card p {
+  flex: 1;
+}
+
+.civic-card a {
+  margin-top: auto;
+}
