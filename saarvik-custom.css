@@ -583,3 +583,7 @@
 }
 
 .footer-social__icon{width:1.18rem;height:1.18rem;display:block;}
+
+/* Performance v3: inline card icons replacing external Material icon font on homepage */
+.icon-inline{display:inline-flex;align-items:center;justify-content:center}
+.card-icon-svg{width:1.35em;height:1.35em;display:block}
