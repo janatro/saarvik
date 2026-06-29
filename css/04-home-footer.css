@@ -13,7 +13,7 @@
 .nav { height:76px; }
 .brand img { width:74px; height:52px; object-fit:contain; }
 .navlinks a { font-family:Inter,system-ui,sans-serif; font-size:.94rem; font-weight:800; color:#071f3c; }
-.premium-hero { min-height:338px; height:clamp(338px,30vw,430px); padding:0; display:grid; align-items:center; overflow:hidden; color:#fff; background:linear-gradient(90deg,       rgba(6,40,74,.98) 0%,       rgba(6,40,74,.94) 25%,       rgba(6,40,74,.72) 44%,       rgba(6,40,74,.26) 64%,       rgba(6,40,74,.03) 100%),     url("../hero-reference-museum.jpg") center center/cover no-repeat; }
+.premium-hero { min-height:338px; height:clamp(338px,30vw,430px); padding:0; display:grid; align-items:center; overflow:hidden; color:#fff; background:linear-gradient(90deg,       rgba(6,40,74,.98) 0%,       rgba(6,40,74,.94) 25%,       rgba(6,40,74,.72) 44%,       rgba(6,40,74,.26) 64%,       rgba(6,40,74,.03) 100%),     url("../assets/hero-reference-museum.jpg") center center/cover no-repeat; }
 .premium-hero .container.hero-grid { width:min(var(--max),calc(100% - 40px)); display:grid; grid-template-columns:minmax(0,560px); align-items:center; height:100%; gap:0; position:relative; z-index:1; }
 .premium-hero .hero-copy { max-width:535px; padding:0; margin:0; }
 .premium-hero .eyebrow { margin:0 0 .9rem; font-family:Inter,system-ui,sans-serif; font-size:.78rem; line-height:1; letter-spacing:.17em; font-weight:900; color:#C89B47; }
@@ -21,17 +21,17 @@
 .premium-hero .hero-copy .lead { max-width:500px; margin:0; font-family:Inter,system-ui,sans-serif; font-size:1rem; line-height:1.65; font-weight:450; color:rgba(255,255,255,.9); }
 .premium-hero .btn-primary { min-height:44px; padding:.75rem 1.25rem; border-radius:10px; background:#C89B47; color:#061b35; box-shadow:0 10px 22px rgba(0,0,0,.16); }
 @media (max-width:980px) {
-.premium-hero { min-height:470px; height:auto; background:linear-gradient(90deg,rgba(6,40,74,.98) 0%,rgba(6,40,74,.88) 52%,rgba(6,40,74,.30) 100%),       url("../hero-reference-museum.jpg") center center/cover no-repeat; }
+.premium-hero { min-height:470px; height:auto; background:linear-gradient(90deg,rgba(6,40,74,.98) 0%,rgba(6,40,74,.88) 52%,rgba(6,40,74,.30) 100%),       url("../assets/hero-reference-museum.jpg") center center/cover no-repeat; }
 .premium-hero .container.hero-grid { padding:4rem 0; }
 }
 @media (max-width:640px) {
 .nav { height:68px; }
-.premium-hero { min-height:520px; background:linear-gradient(180deg,rgba(6,40,74,.98) 0%,rgba(6,40,74,.88) 56%,rgba(6,40,74,.52) 100%),       url("../hero-reference-museum.jpg") center center/cover no-repeat; }
+.premium-hero { min-height:520px; background:linear-gradient(180deg,rgba(6,40,74,.98) 0%,rgba(6,40,74,.88) 56%,rgba(6,40,74,.52) 100%),       url("../assets/hero-reference-museum.jpg") center center/cover no-repeat; }
 .premium-hero .container.hero-grid { width:min(var(--max),calc(100% - 28px)); padding:3.4rem 0; }
 .premium-hero .actions { align-items:flex-start; flex-direction:column; gap:.7rem; }
 .premium-hero .btn-primary { width:auto; }
 }
-.premium-hero { width:100vw; margin-left:calc(50% - 50vw); min-height:430px; height:clamp(430px,38vw,560px); background:linear-gradient(90deg,       rgba(6,40,74,.98) 0%,       rgba(6,40,74,.94) 24%,       rgba(6,40,74,.72) 43%,       rgba(6,40,74,.28) 62%,       rgba(6,40,74,.05) 100%),     url("../hero-reference-museum.jpg") center center/cover no-repeat; }
+.premium-hero { width:100vw; margin-left:calc(50% - 50vw); min-height:430px; height:clamp(430px,38vw,560px); background:linear-gradient(90deg,       rgba(6,40,74,.98) 0%,       rgba(6,40,74,.94) 24%,       rgba(6,40,74,.72) 43%,       rgba(6,40,74,.28) 62%,       rgba(6,40,74,.05) 100%),     url("../assets/hero-reference-museum.jpg") center center/cover no-repeat; }
 .premium-hero .container.hero-grid { width:min(1180px,calc(100% - 40px)); margin:0 auto; height:100%; display:grid; grid-template-columns:minmax(0,555px); align-items:center; }
 .premium-hero .hero-copy h1 { font-size:clamp(2.65rem,4.1vw,4.45rem); line-height:1.03; max-width:570px; }
 .premium-hero .hero-copy .lead { max-width:545px; font-size:1.05rem; }
@@ -56,12 +56,12 @@ to { transform:rotateY(360deg); }
 .image-world { min-height:300px; }
 }
 @media (max-width:980px) {
-.premium-hero { min-height:520px; height:auto; background:linear-gradient(90deg,rgba(6,40,74,.98) 0%,rgba(6,40,74,.88) 54%,rgba(6,40,74,.34) 100%),       url("../hero-reference-museum.jpg") center center/cover no-repeat; }
+.premium-hero { min-height:520px; height:auto; background:linear-gradient(90deg,rgba(6,40,74,.98) 0%,rgba(6,40,74,.88) 54%,rgba(6,40,74,.34) 100%),       url("../assets/hero-reference-museum.jpg") center center/cover no-repeat; }
 .premium-hero .container.hero-grid { padding:4.8rem 0; }
 .museum-worlds { grid-template-columns:repeat(2,minmax(0,1fr)); }
 }
 @media (max-width:640px) {
-.premium-hero { min-height:560px; background:linear-gradient(180deg,rgba(6,40,74,.98) 0%,rgba(6,40,74,.88) 58%,rgba(6,40,74,.60) 100%),       url("../hero-reference-museum.jpg") center center/cover no-repeat; }
+.premium-hero { min-height:560px; background:linear-gradient(180deg,rgba(6,40,74,.98) 0%,rgba(6,40,74,.88) 58%,rgba(6,40,74,.60) 100%),       url("../assets/hero-reference-museum.jpg") center center/cover no-repeat; }
 .premium-hero .container.hero-grid { width:min(1180px,calc(100% - 28px)); padding:4rem 0; }
 .premium-hero .hero-copy h1 { font-size:2.35rem; }
 .museum-worlds { grid-template-columns:1fr; }
