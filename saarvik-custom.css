@@ -587,3 +587,95 @@
 /* Performance v3: inline card icons replacing external Material icon font on homepage */
 .icon-inline{display:inline-flex;align-items:center;justify-content:center}
 .card-icon-svg{width:1.35em;height:1.35em;display:block}
+
+
+/* Civic transparency and local-value compliance blocks */
+.academic-transparency-card {
+  grid-column: 1 / -1;
+  border: 1px solid rgba(201, 155, 71, 0.34);
+  background: linear-gradient(135deg, rgba(255,255,255,0.98), rgba(251,247,239,0.96));
+  box-shadow: 0 18px 44px rgba(6, 27, 53, 0.08);
+}
+
+.academic-transparency-card h2 {
+  margin-top: .25rem;
+}
+
+.academic-transparency-card__cta {
+  margin-top: 1rem;
+}
+
+.academic-transparency-card__cta a,
+.civic-card a {
+  display: inline-flex;
+  align-items: center;
+  gap: .35rem;
+  font-weight: 900;
+  color: #9a6b16;
+  text-decoration: none;
+}
+
+.civic-section {
+  background: linear-gradient(180deg, rgba(255,253,248,0.96), rgba(247,242,232,0.88));
+}
+
+.civic-section--guide {
+  padding-top: 0;
+}
+
+.civic-section__header p {
+  max-width: 780px;
+}
+
+.civic-grid {
+  display: grid;
+  gap: 1rem;
+}
+
+.civic-grid--two {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.civic-grid--culture {
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+}
+
+.civic-card {
+  min-height: 100%;
+  padding: 1.25rem;
+  border-radius: 24px;
+  background: rgba(255,255,255,0.92);
+  border: 1px solid rgba(6, 27, 53, 0.08);
+  box-shadow: 0 16px 36px rgba(6, 27, 53, 0.07);
+}
+
+.civic-card h3 {
+  margin: 0 0 .65rem;
+  color: #061b35;
+  font-size: 1.05rem;
+  line-height: 1.22;
+}
+
+.civic-card p {
+  margin: 0 0 1rem;
+  color: #53657a;
+  font-size: .95rem;
+}
+
+@media (max-width: 1100px) {
+  .civic-grid--culture {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 720px) {
+  .civic-grid--two,
+  .civic-grid--culture {
+    grid-template-columns: 1fr;
+  }
+
+  .civic-card {
+    border-radius: 18px;
+    padding: 1.05rem;
+  }
+}
